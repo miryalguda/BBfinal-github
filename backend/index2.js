@@ -2,7 +2,7 @@ const  express = require("express")
 const mongoose = require("mongoose");
 const  cors = require("cors")
 const UserModel = require ("./model/user.js")
-const  bcrypt = require ("bcrypt")
+const  bcryptjs = require ("bcryptjs")
 const app = express();
 const jwt  = require  ("jsonwebtoken")
 const cookieParser = require ("cookie-parser")
@@ -10,7 +10,7 @@ const Trans = require("./model/Alldata.js")
 const Withdraw = require ("./model/withdrawModel.js")
 const path = require ("path")
 const dotenv = require('dotenv');
-
+const  bcrypt = require("bcrypt)")
 const PORT = process.env.PORT
 dotenv.config();
 /*
