@@ -10,7 +10,7 @@ const Trans = require("./model/Alldata.js")
 const Withdraw = require ("./model/withdrawModel.js")
 const path = require ("path")
 const dotenv = require('dotenv');
-const  bcrypt = require("bcrypt)")
+const  bcrypt = require("bcrypt")
 const PORT = process.env.PORT
 dotenv.config();
 /*
