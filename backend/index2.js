@@ -10,8 +10,9 @@ const Trans = require("./model/Alldata.js")
 const Withdraw = require ("./model/withdrawModel.js")
 const path = require ("path")
 const dotenv = require('dotenv');
-dotenv.config();
 
+const PORT = process.env.PORT
+dotenv.config();
 /*
 
 const db = require ("./db.js")
@@ -195,7 +196,7 @@ app.get("/gettrans", (req, res) => {
 
  mongoose.connect(process.env.MONGO_URI)
  .then( () => {
-     app.listen(process.env.PORT, () => {
+     app.listen(PORT, () => {
         console.log("Connected to DB and Server started on port 3260", process.env.PORT)
  })
 })
