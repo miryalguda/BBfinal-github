@@ -12,9 +12,9 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
 
   },
-  
+
   "engines": {
-    "node": "21.x"
+    "node": "18.x"
   },
 
   "keywords": [],
