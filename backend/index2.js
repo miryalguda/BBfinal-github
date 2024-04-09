@@ -2,7 +2,7 @@ const  express = require("express")
 const mongoose = require("mongoose");
 const  cors = require("cors")
 const UserModel = require ("./model/user.js")
-const  bcryptjs = require ("bcryptjs")
+const  bcrypt = require ("bcrypt")
 const app = express();
 const jwt  = require  ("jsonwebtoken")
 const cookieParser = require ("cookie-parser")
@@ -204,6 +204,12 @@ app.get("/gettrans", (req, res) => {
     console.log (error)
   })
  
+
+/*
+    "server": "nodemon backend/index2.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+*/
 
  
   
