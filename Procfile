@@ -1,1 +1,1 @@
-web:node backend/index2.js
+web:npm run build

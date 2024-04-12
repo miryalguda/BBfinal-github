@@ -65,7 +65,7 @@ process.exit(1)
 
 mongoose.connect("uri")
 
-mongoose.connect("mongodb+srv://mern123:NAVnagum@merncluster.drrc1dm.mongodb.net/merndatabase?retryWrites=true&w=majority")
+mongoose.connect("+srv://:@.drrc1dm.mongodb.net/?retryWrites=true&w=majority")
 */
 const  verifyUser = (req, res, next) => {
     const  token = req.cookies.token;
@@ -211,7 +211,11 @@ app.get("/gettrans", (req, res) => {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
 */
 
- 
+ /*
+Procfile
+
+web:node backend/index2.js
+*/
   
 
   
