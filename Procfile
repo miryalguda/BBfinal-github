@@ -1,1 +1,1 @@
-web:npm run build
+web:node index2.js
